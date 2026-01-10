@@ -1,0 +1,115 @@
+================================================================================
+AGENTIC AI FOR UX DESIGN AND EXPERIMENTATION: A PRACTICAL FRAMEWORK
+================================================================================
+
+Author: Gretchen Pfeil, Ph.D.
+
+Document Type: Technical Framework
+Focus: Product Design, AI Systems, Experimentation
+Date: January 2026
+
+--------------------------------------------------------------------------------
+
+This framework describes a realistic, production-grade system for using AI 
+agents to design, test, and iteratively improve software user experiences 
+through controlled experimentation.
+
+
+================================================================================
+1. SYSTEM ARCHITECTURE
+================================================================================
+
+--------------------------------------------------------------------------------
+Agent Roles and Responsibilities
+--------------------------------------------------------------------------------
+
+** Research Agent **
+
+  • Analyzes user behavior data (analytics, session recordings, support tickets)
+  • Identifies friction points, drop-off patterns, and opportunity areas
+  • Synthesizes qualitative feedback into structured insights
+  • Maintains a knowledge base of user segments and their behaviors
+
+** UX Design Agent **
+
+  • Generates design hypotheses based on research insights
+  • Creates variant designs (wireframes, layouts, copy alternatives)
+  • References design system constraints and brand guidelines
+  • Documents design rationale and expected impact
+
+** Experiment Design Agent **
+
+  • Translates UX hypotheses into testable experiments
+  • Calculates required sample sizes and traffic allocation
+  • Defines primary and secondary metrics
+  • Sets guardrail metrics (e.g., "conversion must not drop >5%")
+
+** Analysis Agent **
+
+  • Monitors experiments in real-time for early signals
+  • Performs statistical analysis when significance is reached
+  • Generates reports with actionable recommendations
+  • Flags anomalies or unexpected behaviors
+
+** Governance Agent **
+
+  • Ensures experiments meet safety criteria before launch
+  • Checks for conflicting experiments or metric pollution
+  • Validates statistical rigor and prevents p-hacking
+  • Manages experiment portfolio for resource optimization
+
+** Orchestrator Agent **
+
+  • Coordinates workflow between specialized agents
+  • Manages state across the experimentation lifecycle
+  • Handles error recovery and rollback procedures
+  • Escalates to humans based on predefined rules
+
+--------------------------------------------------------------------------------
+Communication Pattern
+--------------------------------------------------------------------------------
+
+Agents operate asynchronously through a shared event bus and structured data 
+store. Each agent publishes results to specific topics (e.g., research.insights, 
+experiments.results) and subscribes to inputs they need. This loose coupling 
+allows agents to be upgraded independently.
+
+
+================================================================================
+2. UX DESIGN WORKFLOW
+================================================================================
+
+--------------------------------------------------------------------------------
+Phase 1: Insight Gathering (Research Agent)
+--------------------------------------------------------------------------------
+
+The Research Agent operates on a continuous loop:
+
+1. Quantitative Analysis: Queries analytics database for:
+  • Funnel conversion rates by segment
+  • Time-on-task metrics
+  • Error rates and retry patterns
+  • Feature adoption curves
+
+2. Qualitative Synthesis: Processes:
+  • Support ticket clustering (common pain points)
+  • Session replay sampling (targeted at drop-off points)
+  • User interview transcripts (if available)
+  • NPS feedback categorization
+
+3. Opportunity Scoring: Ranks issues by:
+  • Impact (users affected × severity)
+  • Feasibility (engineering complexity estimate)
+  • Alignment (strategic priority scoring)
+
+[Complete framework continues with sections on Experimentation Loop, Recursive 
+Learning, Human-in-the-Loop Controls, Safeguards, and Practical Examples...]
+
+
+================================================================================
+END OF DOCUMENT
+================================================================================
+Agentic AI for UX Design and Experimentation
+Author: Gretchen Pfeil, Ph.D.
+A Practical Framework | January 2026
+================================================================================

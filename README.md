@@ -4,3 +4,5 @@ Welcome to *Designing for Learning* — a living body of work dedicated to frami
 Rather than treating design as a one-off deliverable, this work positions it as a **continuous learning system** where hypotheses are stated explicitly, outcomes are measured in production, and every version contributes to deeper understanding of both user and technology (and of the changing relationship between the socio- and -technical of information technology). Here you’ll find structured thinking on systems, metrics, mental models, and service design practice that suggest practical application and demonstrate value of considering **design, research, and learning** not as separate moments in delivery, but as distinct perspectives on a shared object: the product as a tool in use. 
 
 The approach is informed by Peircean semiotics as a model of meaning in practice, evolving in use. A design, like any other sign in Peirce's sense, is a hypothesis about action, that is continuously designed through use. That is, designing is a learning process like any other. 
+
+Please share comments here, or reach me at gpfeil@protonmail.com
